@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', 'MessagesContoroller@index');
-Route::resource('messages' , 'MessagesContoroller');
+Route::get('/', 'MessagesController@index');
+Route::resource('messages' , 'MessagesController');
 
 
 /*Root::resourse()でルーティングされるもの
