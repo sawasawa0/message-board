@@ -682,3 +682,4 @@
 [20-Jul-2017 23:40:24 Asia/Tokyo] PHP  50. Illuminate\View\View->getContents() /home/ubuntu/workspace/message-board/vendor/laravel/framework/src/Illuminate/View/View.php:118
 [20-Jul-2017 23:40:24 Asia/Tokyo] PHP  51. Illuminate\View\Engines\CompilerEngine->get() /home/ubuntu/workspace/message-board/vendor/laravel/framework/src/Illuminate/View/View.php:147
 [20-Jul-2017 23:40:24 Asia/Tokyo] PHP  52. Illuminate\View\Engines\PhpEngine->evaluatePath() /home/ubuntu/workspace/message-board/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:58
+[22-Jul-2017 10:11:13 UTC] PHP Warning:  Unknown: php_network_getaddresses: getaddrinfo failed: Name or service not known in Unknown on line 0

@@ -32,7 +32,11 @@ class MessagesController extends Controller
      */
     public function create()
     {
-$message = new Message; return view('messages.create', [ 'message' => $message, ]);
+        $message = new Message;
+        
+        return view('messages.create', [
+            'message' => $message,
+        ]);
     }
 
     /**
@@ -45,8 +49,8 @@ $message = new Message; return view('messages.create', [ 'message' => $message, 
     {
         $message = new Message;
         $message->content = $request->content;
-        $message->save();
-
+        $message->save(); 
+        
         return redirect('/');
     }
 
@@ -74,8 +78,8 @@ $message = new Message; return view('messages.create', [ 'message' => $message, 
     public function edit($id)
     {
         $message = Message::find($id);
-
-        return view('messages.edit', [
+        
+        return view('messages.edit',[
             'message' => $message,
         ]);
     }
@@ -92,7 +96,7 @@ $message = new Message; return view('messages.create', [ 'message' => $message, 
         $message = Message::find($id);
         $message->content = $request->content;
         $message->save();
-
+        
         return redirect('/');
     }
 
@@ -106,7 +110,7 @@ $message = new Message; return view('messages.create', [ 'message' => $message, 
     {
         $message = Message::find($id);
         $message->delete();
-
+        
         return redirect('/');
     }
 }
