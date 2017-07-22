@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', 'MessagesController@index');
-Route::resource('messages' , 'MessagesController');
 
+//Route::get('/', function () { return view('welcome'); });
+
+Route::get('/', 'MessagesController@index');
+Route::resource('messages', 'MessagesController');
 
 /*Root::resourse()でルーティングされるもの
 
